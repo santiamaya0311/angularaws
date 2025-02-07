@@ -11,7 +11,7 @@ class usuariosModel{
     }
 
     async update(id, usuario){
-        return await Usuario.findByIdAndUpdate({_id: new mongoose.Types.ObjectId(id)});
+        return await Usuario.findByIdAndUpdate({_id: new mongoose.Types.ObjectId(id)},usuario);
 
 
     }

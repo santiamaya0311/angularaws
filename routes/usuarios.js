@@ -9,6 +9,7 @@ route.get("/", usuariosController.getAll)
 route.get("/:id", usuariosController.getUno)
 route.delete("/:id", usuariosController.delete)
 route.post("/code", usuariosController.verificacionCode)
+route.put("/usuarios",usuariosController.update)
 
 
 export default route;
